@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ▼▼ להחליף בפרטים שלך ▼▼ -->
+  <title>ישראל ישראלי · תיק עבודות</title>
+  <meta name="description" content="תיק עבודות דיגיטלי — כתיבה, צילום ועריכת תוכן לסושיאל מדיה.">
+  <meta property="og:title" content="ישראל ישראלי · תיק עבודות">
+  <meta property="og:description" content="תיק עבודות דיגיטלי — כתיבה, צילום ועריכת תוכן לסושיאל מדיה.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="he_IL">
+  <!-- ▲▲ להחליף בפרטים שלך ▲▲ -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;900&family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- מסמן שיש JS. בלי זה אנימציות הכניסה לא מופעלות כלל,
+       כדי שהאתר יישאר קריא גם אם JS נכשל או חסום. -->
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+<a class="skip-link" href="#work">דלג לתיק העבודות</a>
+
+<!-- ══════════ HERO ══════════ -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <p class="kicker reveal">תיק עבודות · 2026</p>
+
+    <!-- ▼ שם ▼ -->
+    <h1 class="hero__name reveal">ישראל<br>ישראלי</h1>
+
+    <!-- ▼ התפקיד המבוקש ▼ -->
+    <p class="hero__role reveal">מועמד לתפקיד במחלקת סושיאל מדיה — כתיבה, צילום ועריכת תוכן</p>
+
+    <!-- ▼ משפט קצר עליך ▼ -->
+    <p class="hero__pitch reveal">
+      אני עושה את כל הדרך של סרטון — מהרעיון על הנייר, דרך הצילום בשטח, ועד הקאט האחרון.
+      מאמין שתוכן טוב מתחיל במשפט אחד ברור, ורק אחר כך במצלמה.
+    </p>
+
+    <ul class="hero__tags reveal" aria-label="תחומי עיסוק">
+      <li>כתיבה</li>
+      <li>צילום</li>
+      <li>עריכה</li>
+    </ul>
+
+    <div class="hero__cta reveal">
+      <a class="btn btn--primary" href="#work">לצפייה בעבודות</a>
+      <a class="btn btn--ghost" href="#contact">יצירת קשר</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ══════════ ABOUT ══════════ -->
+  <section class="about" id="about" aria-labelledby="about-title">
+    <div class="wrap about__grid">
+      <p class="section-kicker" id="about-title">קצת עליי</p>
+      <div class="about__body reveal">
+        <!-- ▼ פסקת אודות ▼ -->
+        <p>
+          שלוש שנים שאני מייצר תוכן לסושיאל — מפוסט שנכתב בעשר דקות ועד סדרת סרטונים
+          שמלווה מותג לאורך רבעון. עבדתי מול מותגים, ארגונים וצוותים פנימיים, בדרך כלל
+          כאיש אחד שמחזיק את כל השרשרת: מחקר, תסריט, צילום, עריכה והעלאה.
+        </p>
+        <p>
+          מה שמעניין אותי הוא לא ה"וואו" של הפריים הראשון אלא מה נשאר אחרי הגלילה —
+          שהצופה יזכור משפט אחד, ושהמותג יישמע כמו בן אדם.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ WORK / VIDEOS ══════════ -->
+  <section class="work" id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-kicker">תיק עבודות</p>
+        <h2 class="section-title" id="work-title">עבודות נבחרות</h2>
+        <p class="section-sub">לכל סרטון מצוין מה היה התפקיד שלי ובשביל מה הוא נעשה.</p>
+      </div>
+
+      <!-- מסננים — נבנים אוטומטית מ-app.js -->
+      <div class="filters" id="filters" role="group" aria-label="סינון לפי תפקיד"></div>
+
+      <!-- הגלריה — נבנית אוטומטית מ-data/videos.js -->
+      <div class="grid" id="grid"></div>
+      <p class="grid__empty" id="grid-empty" hidden>אין עבודות בקטגוריה הזו.</p>
+    </div>
+  </section>
+
+  <!-- ══════════ CONTACT ══════════ -->
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <p class="section-kicker">יצירת קשר</p>
+      <h2 class="section-title contact__title" id="contact-title">נשמח לדבר.</h2>
+
+      <ul class="contact__list">
+        <!-- ▼ מייל ▼ -->
+        <li>
+          <a href="mailto:your@email.com">
+            <span class="contact__label">אימייל</span>
+            <span class="contact__value">your@email.com</span>
+          </a>
+        </li>
+        <!-- ▼ לינקדאין ▼ -->
+        <li>
+          <a href="https://www.linkedin.com/in/USERNAME" target="_blank" rel="noopener noreferrer">
+            <span class="contact__label">לינקדאין</span>
+            <span class="contact__value">linkedin.com/in/USERNAME</span>
+          </a>
+        </li>
+        <!-- ▼ אינסטגרם ▼ -->
+        <li>
+          <a href="https://www.instagram.com/USERNAME" target="_blank" rel="noopener noreferrer">
+            <span class="contact__label">אינסטגרם</span>
+            <span class="contact__value">@USERNAME</span>
+          </a>
+        </li>
+        <!-- ▼ קורות חיים — שים קובץ בשם cv.pdf בתיקיית assets ▼ -->
+        <li>
+          <a href="assets/cv.pdf" target="_blank" rel="noopener">
+            <span class="contact__label">קורות חיים</span>
+            <span class="contact__value">הורדה כ-PDF ↓</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p>© <span id="year"></span> ישראל ישראלי</p>
+    <a href="#top" class="footer__top">חזרה למעלה ↑</a>
+  </div>
+</footer>
+
+<!-- ══════════ נגן וידאו (מודאל) ══════════ -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__panel" role="document">
+    <button class="modal__close" type="button" data-close aria-label="סגירת הנגן">✕</button>
+    <div class="modal__player" id="modal-player"></div>
+    <div class="modal__meta">
+      <h3 class="modal__title" id="modal-title"></h3>
+      <p class="modal__desc" id="modal-desc"></p>
+    </div>
+  </div>
+</div>
+
+<script src="data/videos.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

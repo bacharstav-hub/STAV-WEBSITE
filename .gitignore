@@ -1,0 +1,13 @@
+# secrets — never commit
+.streamlit/secrets.toml
+
+# personal data — portfolio is per-user, starts empty; keep it out of the repo
+portfolio.json
+# NOTE: rate_overrides.json IS committed on purpose — it seeds the manual
+# central-bank rate corrections (e.g. Israel 3.5%) into the deployed app.
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
